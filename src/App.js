@@ -26,7 +26,7 @@ function App() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-white inline-flex items-center justify-center p-2 rounded-full border  border-gray-500 text-gray-500 hover:bg-blue-500 opacity-80"
+                className="bg-white inline-flex items-center justify-center p-2 rounded-full border  border-gray-500 text-gray-500 opacity-80"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -115,6 +115,7 @@ function App() {
       </nav>
     
       <main className='bg-white'>
+        <section className='min-h-screen'>
         <div class="flex items-center justify-center h-96 w-screen 
             bg-gradient-to-r 
             from-blue-400 
@@ -128,10 +129,10 @@ function App() {
               </div>
               <div>
                 <div className='text-center p-4 mt-2'>
-                  <div className='bg-yellow-100 text-amber-400 p-3 mx-16 font-bold rounded-t-xl hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Enhance your businesses branding with a sleek and modern website<br/></div>
-                  <div className='bg-yellow-300 text-red-800 p-3 mx-16 font-bold hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Work together to perfect the ideal showcase of your business<br/></div>
-                  <div className='bg-amber-400 text-yellow-100 p-3 mx-16 font-bold hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Have complete customisation input<br/></div>
-                  <div className='bg-red-800 text-yellow-200 p-3 mx-16 font-bold rounded-b-xl hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Get in touch to discuss your next website</div>
+                  <div className='bg-yellow-100 text-amber-400 p-3 mx-16 font-bold rounded-t-xl  '>Enhance your businesses branding with a sleek and modern website<br/></div>
+                  <div className='bg-yellow-300 text-red-800 p-3 mx-16 font-bold   '>Work together to perfect the ideal showcase of your business<br/></div>
+                  <div className='bg-amber-400 text-yellow-100 p-3 mx-16 font-bold '>Have complete customisation input<br/></div>
+                  <div className='bg-red-800 text-yellow-200 p-3 mx-16 font-bold rounded-b-xl '>Get in touch to discuss your next website</div>
                 </div>
               </div>
             </div>
@@ -159,45 +160,14 @@ function App() {
         </div>
         </div>
          </div>
-
-         
-         
-         
-
-
-       
-           
-        
-
-       
-        
-        
-
-        <section className='min-h-screen '></section>
-        <div className="flex flex-col h-screen">
-          <div className='mt-48 m-6  rounded-xl'>
-
-            <div className='text-center p-4 mt-8'>
-              <div className='bg-yellow-100 text-amber-400 p-3 mx-16 font-bold rounded-t-xl hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Enhance your businesses branding with a sleek and modern website<br/></div>
-              <div className='bg-yellow-300 text-red-800 p-3 mx-16 font-bold hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Work together to perfect the ideal showcase of your business<br/></div>
-              <div className='bg-amber-400 text-yellow-100 p-3 mx-16 font-bold hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Have complete customisation input<br/></div>
-              <div className='bg-red-800 text-yellow-200 p-3 mx-16 font-bold rounded-b-xl hover:mx-8 hover:px-8 hover:py-6 hover:text-lg'>Get in touch to discuss your next website</div>
-            </div>
-            <div className='flex justify-center  mt-5'>
-            <button onClick={() => setIsOpen(!isOpen)} className=' text-base md:text-xl bg-blue-400 text-white px-4 py-2 rounded-md mx-4 z-100'>
-              <h3 className='font-bold '>Get In Contact</h3>
-            </button>
-            <button onClick={() => setIsOpen(!isOpen)} className=' text-base md:text-xl bg-blue-400 text-white px-4 py-2 rounded-md mx-1 z-100'>
-              <h3 className='font-bold '>Show Me The Websites!</h3>
-            </button>
-
+         </section>
+        <section className='min-h-screen'>
+          <div className='flex justify-center'>
+            <div className='mt-32 font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-4 animate-appearfade z-40'>
+              Contact Me
             </div>
           </div>
-          
-        </div>
-        <div className=''>
-          <div>Get In Touch</div>
-        </div>
+        </section>
       </main>
     </div>
   );

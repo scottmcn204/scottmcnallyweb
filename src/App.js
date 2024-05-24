@@ -7,7 +7,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='bg-white'>
-      <nav className=" fixed w-full bg-white bg-opacity-50 z-0">
+      <nav className=" fixed w-full bg-white bg-opacity-75 z-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-0">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">

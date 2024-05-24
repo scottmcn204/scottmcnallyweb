@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
+import{AiFillLinkedin} from 'react-icons/ai';
 
 
 function App() {
@@ -168,13 +169,22 @@ function App() {
             </div>
           </div>
           <div className='flex justify-center z-100 mt-24'>
-          <div className='relative mx-3'>
+          <div className='relative mx-6'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
         <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
-
           <div class="space-y-2">
-            <p class="text-slate-800">Reach out to discuss your next website with me!</p>
-            <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Contact →</a>
+            <p class="text-slate-800 text-center p-4">If you are interested in collaborating or just have any questions, reach out to me by email or through LinkedIn message</p>
+            <div className='flex justify-center mb-5 z-40'>
+            <div className='md:text-4xl bg-blue-500 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56  z-40'>
+              <AiFillLinkedin></AiFillLinkedin>
+              <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>LinkedIn</a></h3>
+            </div>
+          </div>
+          <div className='flex justify-center mb-5 z-40'>
+            <div className='md:text-4xl bg-gray-500 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56  z-40'>
+              <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>mcnallsc@tcd.ie</a></h3>
+            </div>
+          </div>
           </div>
         </div>
         </div>

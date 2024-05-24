@@ -130,17 +130,9 @@ function App() {
               <div className='text-center   p-8 text-white font-extrabold text-4xl md:text-5xl  z-80'>
                   Thoughtful Web Design For Your Business
               </div>
-              <p className=' border-r-4 border-r-white pr-5 text-center text-white m-3 animation-typing'>
+              <p className=' lg:border-r-4 lg:border-r-white lg:pr-5 text-center text-white m-3 lg:animate-typing lg:whitespace-nowrap lg:overflow-hidden'>
                 Enhance your businesses branding with a sleek and modern website. Work together with me to perfect the ideal showcase of your business.
               </p>
-              {/* <div>
-                <div className='text-center p-4 mt-2'>
-                  <div className='bg-purple-700 text-white p-3 mx-4 rounded-t-xl  '>Enhance your businesses branding with a sleek and modern website<br/></div>
-                  <div className='bg-purple-500 text-white p-3 mx-4    '>Work together to perfect the ideal showcase of your business<br/></div>
-                  <div className='bg-blue-500 text-white p-3 mx-4  '>Have complete customisation input<br/></div>
-                  <div className='bg-blue-400 text-white p-3 mx-4  rounded-b-xl '>Get in touch to discuss your next website</div>
-                </div>
-              </div> */}
             </div>
          </div>
          <div className='h-56'></div>

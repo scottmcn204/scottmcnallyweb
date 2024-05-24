@@ -13,7 +13,7 @@ module.exports = {
         'gradient-y':'gradient-y 15s ease infinite',
         'gradient-xy':'gradient-xy 10s ease infinite',
         'typewriter': "typewriter 2s steps(11) forwards",
-        'typing': "typing 2s steps(20) infinite, blink .7s infinite"
+        'typing': "typing 4s steps(60) , blink .7s infinite"
     },
     'keyframes': {
         'gradient-y': {

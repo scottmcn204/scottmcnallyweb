@@ -9,7 +9,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='bg-white'>
-      <nav className=" fixed w-full bg-white bg-opacity-75 z-0">
+      <nav className=" fixed w-full bg-white bg-opacity-90 z-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-0">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
@@ -159,13 +159,13 @@ function App() {
         </div>
          </div>
          </section>
-        <section className='min-h-screen'>
+        <section className=''>
           <div className='flex justify-center'>
-            <div className='mt-32 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
+            <div className='mt-4 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
               Contact Me
             </div>
           </div>
-          <div className='flex justify-center z-100 mt-24'>
+          <div className='flex justify-center z-100 mt-4 mb-8'>
           <div className='relative mx-6'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
         <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
@@ -187,9 +187,15 @@ function App() {
         </div>
         </div>
         </section>
-        <section className='min-h-screen'>
+        <section className='min-h-screen
+        bg-gradient-to-r 
+        from-rose-200 
+        to-teal-200 
+        via-cyan-200
+        
+        animate-gradient-xy'>
         <div className='flex justify-center'>
-            <div className='mt-32 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
+            <div className='mt-4  font-extrabold text-white text-4xl md:text-5xl  p-4 z-100'>
               Websites
             </div>
           </div>

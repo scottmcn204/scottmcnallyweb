@@ -129,10 +129,10 @@ function App() {
               </div>
               <div>
                 <div className='text-center p-4 mt-2'>
-                  <div className='bg-yellow-100 text-amber-400 p-3 mx-16 font-bold rounded-t-xl  '>Enhance your businesses branding with a sleek and modern website<br/></div>
-                  <div className='bg-yellow-300 text-red-800 p-3 mx-16 font-bold   '>Work together to perfect the ideal showcase of your business<br/></div>
-                  <div className='bg-amber-400 text-yellow-100 p-3 mx-16 font-bold '>Have complete customisation input<br/></div>
-                  <div className='bg-red-800 text-yellow-200 p-3 mx-16 font-bold rounded-b-xl '>Get in touch to discuss your next website</div>
+                  <div className='bg-yellow-100 text-amber-400 p-3 mx-4 font-bold rounded-t-xl  '>Enhance your businesses branding with a sleek and modern website<br/></div>
+                  <div className='bg-yellow-300 text-red-800 p-3 mx-4 font-bold   '>Work together to perfect the ideal showcase of your business<br/></div>
+                  <div className='bg-amber-400 text-yellow-100 p-3 mx-4 font-bold '>Have complete customisation input<br/></div>
+                  <div className='bg-red-800 text-yellow-200 p-3 mx-4 font-bold rounded-b-xl '>Get in touch to discuss your next website</div>
                 </div>
               </div>
             </div>
@@ -140,8 +140,8 @@ function App() {
          <div className='h-64'></div>
          <div className='flex justify-center z-100'>
           <div className='relative mx-3'>
-         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25"></div>
-        <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
+        <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
 
           <div class="space-y-2">
             <p class="text-slate-800">Reach out to discuss your next website with me!</p>
@@ -163,10 +163,22 @@ function App() {
          </section>
         <section className='min-h-screen'>
           <div className='flex justify-center'>
-            <div className='mt-32 font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 p-4 animate-appearfade z-40'>
+            <div className='mt-32 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
               Contact Me
             </div>
           </div>
+          <div className='flex justify-center z-100 mt-24'>
+          <div className='relative mx-3'>
+         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
+        <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
+
+          <div class="space-y-2">
+            <p class="text-slate-800">Reach out to discuss your next website with me!</p>
+            <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Contact →</a>
+          </div>
+        </div>
+        </div>
+        </div>
         </section>
       </main>
     </div>

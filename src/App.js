@@ -82,28 +82,28 @@ function App() {
             <div className="" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
-                  href="#"
+                  href="./"
                   className=" text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
                 >
                   Home
                 </a>
 
                 <a
-                  href="#"
+                  href="./"
                   className="text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
                 >
                   Get In Touch
                 </a>
 
                 <a
-                  href="#"
+                  href="./"
                   className="text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
                 >
                   Websites
                 </a>
 
                 <a
-                  href="#" 
+                 href="./"
                   className="text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
                 >
                   About Me
@@ -144,7 +144,7 @@ function App() {
 
           <div class="space-y-2">
             <p class="text-slate-800">Reach out to discuss your next website with me!</p>
-            <a href="#" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Contact →</a>
+            <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Contact →</a>
           </div>
         </div>
         </div>
@@ -154,7 +154,7 @@ function App() {
 
           <div class="space-y-2">
             <p class="text-slate-800">View some of the projects that I've worked on recently</p>
-            <a href="#" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Websites →</a>
+            <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Websites →</a>
           </div>
         </div>
         </div>

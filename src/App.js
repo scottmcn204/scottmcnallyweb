@@ -4,6 +4,7 @@ import { Transition } from "@headlessui/react";
 import{AiFillLinkedin} from 'react-icons/ai';
 
 
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -13,11 +14,11 @@ function App() {
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
               <div className="flex-shrink-0 text-center">
-                <div className=' p-2 text-white font-bold border border-white border-2 rounded-xl font-burtons text-l bg-blue-500'>
+                <div className=' animate-gradient-xy font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
                   <p>
                     Scott McNally
                     <br></br>
-                    Web Design
+                    Web Design {'</>'}
                   </p>
                   
                 </div>
@@ -116,31 +117,35 @@ function App() {
       </nav>
     
       <main className='bg-white'>
-        <section className='min-h-screen'>
-        <div class="flex items-center justify-center h-96 w-screen 
+        <section className='min-h-screen             
             bg-gradient-to-r 
             from-blue-400 
             to-orange-500 
             via-purple-500
-            animate-gradient-xy
+            animate-gradient-xy'>
+        <div class="flex items-center justify-center h-96 w-screen 
+
             "> 
             <div className='mt-96'>
-              <div className='text-center  p-8 text-white font-bold text-3xl  z-80'>
+              <div className='text-center   p-8 text-white font-extrabold text-4xl md:text-5xl  z-80'>
                   Thoughtful Web Design For Your Business
               </div>
-              <div>
+              <p className=' border-r-4 border-r-white pr-5 text-center text-white m-3 animation-typing'>
+                Enhance your businesses branding with a sleek and modern website. Work together with me to perfect the ideal showcase of your business.
+              </p>
+              {/* <div>
                 <div className='text-center p-4 mt-2'>
-                  <div className='bg-yellow-100 text-amber-400 p-3 mx-4 font-bold rounded-t-xl  '>Enhance your businesses branding with a sleek and modern website<br/></div>
-                  <div className='bg-yellow-300 text-red-800 p-3 mx-4 font-bold   '>Work together to perfect the ideal showcase of your business<br/></div>
-                  <div className='bg-amber-400 text-yellow-100 p-3 mx-4 font-bold '>Have complete customisation input<br/></div>
-                  <div className='bg-red-800 text-yellow-200 p-3 mx-4 font-bold rounded-b-xl '>Get in touch to discuss your next website</div>
+                  <div className='bg-purple-700 text-white p-3 mx-4 rounded-t-xl  '>Enhance your businesses branding with a sleek and modern website<br/></div>
+                  <div className='bg-purple-500 text-white p-3 mx-4    '>Work together to perfect the ideal showcase of your business<br/></div>
+                  <div className='bg-blue-500 text-white p-3 mx-4  '>Have complete customisation input<br/></div>
+                  <div className='bg-blue-400 text-white p-3 mx-4  rounded-b-xl '>Get in touch to discuss your next website</div>
                 </div>
-              </div>
+              </div> */}
             </div>
          </div>
-         <div className='h-64'></div>
-         <div className='flex justify-center z-100'>
-          <div className='relative mx-3'>
+         <div className='h-56'></div>
+         <div className=' md:flex justify-center z-100'>
+          <div className='relative mx-3 my-3'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
         <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
 
@@ -150,7 +155,7 @@ function App() {
           </div>
         </div>
         </div>
-        <div className='relative mx-3'>
+        <div className='relative mx-3 my-3'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25"></div>
         <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
 
@@ -188,6 +193,16 @@ function App() {
           </div>
         </div>
         </div>
+        </div>
+        </section>
+        <section className='min-h-screen'>
+        <div className='flex justify-center'>
+            <div className='mt-32 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
+              Websites
+            </div>
+          </div>
+        <div>
+
         </div>
         </section>
       </main>

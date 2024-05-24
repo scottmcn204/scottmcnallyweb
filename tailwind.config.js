@@ -12,6 +12,8 @@ module.exports = {
         'gradient-x':'gradient-x 15s ease infinite',
         'gradient-y':'gradient-y 15s ease infinite',
         'gradient-xy':'gradient-xy 10s ease infinite',
+        'typewriter': "typewriter 2s steps(11) forwards",
+        'typing': "typing 2s steps(20) infinite, blink .7s infinite"
     },
     'keyframes': {
         'gradient-y': {
@@ -43,6 +45,28 @@ module.exports = {
                 'background-size':'200% 200%',
                 'background-position': 'right center'
             }
+        },
+        'typewriter': {
+          'to': {
+            'left': "100%"
+          }
+        },
+        'typing': {
+          "0%": {
+            'width': "0%",
+            'visibility': "hidden"
+          },
+          "100%": {
+            'width': "100%"
+          }
+        },
+        'blink': {
+          "50%": {
+            'borderColor': "transparent"
+          },
+          "100%": {
+            'borderColor': "white"
+          }
         }
       }
     },

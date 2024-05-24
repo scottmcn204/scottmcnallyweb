@@ -126,7 +126,7 @@ function App() {
         <div class="flex items-center justify-center h-96 w-screen 
 
             "> 
-            <div className='mt-96'>
+            <div className='md:mt-96 mt-72'>
               <div className='text-center   p-8 text-white font-extrabold text-4xl md:text-5xl  z-80'>
                   Thoughtful Web Design For Your Business
               </div>
@@ -135,7 +135,7 @@ function App() {
               </p>
             </div>
          </div>
-         <div className='h-56'></div>
+         <div className='md:h-56 h-36'></div>
          <div className=' md:flex justify-center z-100'>
           <div className='relative mx-3 my-3'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>

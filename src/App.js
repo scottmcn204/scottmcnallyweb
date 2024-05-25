@@ -2,6 +2,9 @@ import './App.css';
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import{AiFillLinkedin} from 'react-icons/ai';
+import me from './me.jpg'
+import netsoc from './netsoc.png'
+import portfolio from './portfolio.png'
 import { Carousel } from "@material-tailwind/react";
 
 
@@ -138,9 +141,9 @@ function App() {
          </div>
          <div className='md:h-56 h-36'></div>
          <div className=' md:flex justify-center z-100'>
-          <div className='relative mx-3 my-3'>
+          <div className='relative mx-4 my-3'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
-        <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
+        <div class="relative px-4 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
 
           <div class="space-y-2">
             <p class="text-slate-800">Reach out to discuss your next website with me!</p>
@@ -148,9 +151,9 @@ function App() {
           </div>
         </div>
         </div>
-        <div className='relative mx-3 my-3'>
+        <div className='relative mx-4 my-3'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25"></div>
-        <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
+        <div class="relative px-4 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
 
           <div class="space-y-2">
             <p class="text-slate-800">View some of the projects that I've worked on recently</p>
@@ -172,16 +175,18 @@ function App() {
         <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
           <div class="space-y-2">
             <p class="text-slate-800 text-center p-4">If you are interested in collaborating or just have any questions, reach out to me by email or through LinkedIn message</p>
-            <div className='flex justify-center mb-5 z-40'>
+            <div className='md:flex justify-center'>
+            <div className='flex justify-center mb-5 mx-3 z-40'>
             <div className='md:text-4xl bg-blue-500 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56  z-40'>
               <AiFillLinkedin></AiFillLinkedin>
               <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>LinkedIn</a></h3>
             </div>
           </div>
-          <div className='flex justify-center mb-5 z-40'>
+          <div className='flex justify-center mb-5 z-40 mx-3'>
             <div className='md:text-4xl bg-gray-500 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56  z-40'>
               <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>mcnallsc@tcd.ie</a></h3>
             </div>
+          </div>
           </div>
           </div>
         </div>
@@ -200,11 +205,53 @@ function App() {
               Websites
             </div>
 
+          </div>  
+        <div className=' grid  place-items-center'>
+          <div className='  lg:flex-row lg:flex-wrap mx-10 mb-4 md:w-1/2 '>
+          <img src={netsoc} className='rounded-xl object-cover   z-0'  width={'100%'} height={'100%'} alt="netsoc"/>
+          <p>
+            <b>Dublin University Internet Society Website</b><br/>
+            This is the website I made for Trinity's "NetSoc" This included some interesting features such as ReactJS Particles.
+          </p>
+          </div>
+          <div className='flex flex-col  py-4 lg:flex-row lg:flex-wrap mx-10 md:w-1/2'>
+          <img src={portfolio} className='rounded-xl object-cover   z-0'  width={'100%'} height={'100%'} alt="netsoc"/>
+          <p>
+            <b>Personal Portfolio Website</b><br/>
+            A clean and simple website I made to give to employers with my work experience and projects. Made to be very mobile-friendly
+          </p>
           </div>
           {/* <Carousel className="rounded-xl">
           </Carousel> */}
+          </div>
         <div>
 
+        </div>
+        </section>
+        <section className=''>
+        <div className='flex justify-center'>
+            <div className='mt-4 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
+              About Me
+            </div>
+          </div>
+        <div className='flex justify-center items-center z-100 mt-4 mb-8 lg:mx-12 xl:mx-24 2xl:mx-48'>
+          <div className='relative mx-6'>
+         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
+        <div class="relative px-7 py-6 bg-blue-200 ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
+          <div class="space-y-2 md:flex justify-center items-center text-center grid  place-items-center">
+            <img
+                className="h-48 border border-white border-4 rounded-xl"
+                src={me}
+                alt="myself"
+            >
+            </img>
+            <p class="text-slate-800 text-center p-4">My name is Scott McNally and I am a computer science student studying at Trinity College Dublin and 
+                  KTH Royal Institute Stockholm. I have a passion for making interesting and fun websites mainly using React and TailwindCSS. I learned web 
+                  design through a combination of personal projects, college/school courses and online courses.
+            </p>
+          </div>
+        </div>
+        </div>
         </div>
         </section>
       </main>

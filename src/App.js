@@ -5,7 +5,6 @@ import{AiFillLinkedin} from 'react-icons/ai';
 import me from './me.jpg'
 import netsoc from './netsoc.png'
 import portfolio from './portfolio.png'
-import { Carousel } from "@material-tailwind/react";
 
 
 

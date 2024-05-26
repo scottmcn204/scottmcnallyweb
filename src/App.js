@@ -12,16 +12,16 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='bg-white'>
-      <nav className=" fixed w-full bg-white bg-opacity-90 z-0">
+      <nav className=" absolute w-full bg-white bg-opacity-90 z-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-0">
           <div className="flex items-center justify-between h-24">
             <div className="flex items-center">
               <div className="flex-shrink-0 text-center">
-                <div className=' animate-gradient-xy font-extrabold text-transparent  bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
+                <div className=' animate-gradient-xy font-extrabold text-transparent md:text-lg  bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
                   <p>
                     Scott McNally
                     <br></br>
-                    Web Design {'</>'}
+                    Web Design
                   </p>
                   
                 </div>
@@ -133,19 +133,19 @@ function App() {
               <div className='text-center   p-8 text-white font-extrabold text-4xl md:text-5xl  z-80'>
                   Thoughtful Web Design For Your Business
               </div>
-              <p className=' lg:border-r-4 lg:border-r-white lg:pr-5 text-center text-white m-3 lg:animate-typing lg:whitespace-nowrap lg:overflow-hidden'>
+              <p className=' lg:border-r-4 lg:border-r-white lg:pr-5 xl:text-lg text-center text-white m-3 lg:animate-typing lg:whitespace-nowrap lg:overflow-hidden'>
                 Enhance your businesses branding with a sleek and modern website. Work together with me to perfect the ideal showcase of your business.
               </p>
             </div>
          </div>
-         <div className='md:h-56 h-36'></div>
-         <div className=' md:flex justify-center z-100'>
-          <div className='relative mx-4 my-3'>
-         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
-        <div class="relative px-4 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
+         <div className='md:h-56 h-36  z-4'></div>
+         <div className=' md:flex justify-center z-4'>
+          <div className='relative mx-4 my-3 z-4'>
+         <div class=" absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-4"></div>
+        <div class="relative px-4 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-4">
 
-          <div class="space-y-2">
-            <p class="text-slate-800">Reach out to discuss your next website with me!</p>
+          <div class="space-y-2 md:text-lg">
+            <p class="text-slate-800 ">Reach out to discuss your next website with me!</p>
             <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Contact →</a>
           </div>
         </div>
@@ -154,7 +154,7 @@ function App() {
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25"></div>
         <div class="relative px-4 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
 
-          <div class="space-y-2">
+          <div class="space-y-2 md:text-lg">
             <p class="text-slate-800">View some of the projects that I've worked on recently</p>
             <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Websites →</a>
           </div>
@@ -170,9 +170,9 @@ function App() {
           </div>
           <div className='flex justify-center z-100 mt-4 mb-8'>
           <div className='relative mx-6'>
-         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-100"></div>
-        <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-100">
-          <div class="space-y-2">
+         <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-4"></div>
+        <div class="relative px-7 py-6 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-4">
+          <div class="space-y-2 md:text-lg">
             <p class="text-slate-800 text-center p-4">If you are interested in collaborating or just have any questions, reach out to me by email or through LinkedIn message</p>
             <div className='md:flex justify-center'>
             <div className='flex justify-center mb-5 mx-3 z-40'>
@@ -200,21 +200,21 @@ function App() {
         
         animate-gradient-xy'>
         <div className='flex justify-center'>
-            <div className='mt-4  font-extrabold text-white text-4xl md:text-5xl  p-4 z-100'>
+            <div className='mt-4 mb-6  font-extrabold text-white text-4xl md:text-5xl  p-4 z-100'>
               Websites
             </div>
 
           </div>  
         <div className=' grid  place-items-center'>
-          <div className='  lg:flex-row lg:flex-wrap mx-10 mb-4 md:w-1/2 '>
+          <div className='  lg:flex-row lg:flex-wrap mx-10 mb-4 md:w-1/2 md:text-lg'>
           <img src={netsoc} className='rounded-xl object-cover   z-0'  width={'100%'} height={'100%'} alt="netsoc"/>
           <p>
             <b>Dublin University Internet Society Website</b><br/>
             This is the website I made for Trinity's "NetSoc" This included some interesting features such as ReactJS Particles.
           </p>
           </div>
-          <div className='flex flex-col  py-4 lg:flex-row lg:flex-wrap mx-10 md:w-1/2'>
-          <img src={portfolio} className='rounded-xl object-cover   z-0'  width={'100%'} height={'100%'} alt="netsoc"/>
+          <div className='flex flex-col  py-4 lg:flex-row lg:flex-wrap mx-10 md:w-1/2 md:text-lg'>
+          <img src={portfolio} className='rounded-xl object-cover   z-100'  width={'100%'} height={'100%'} alt="netsoc"/>
           <p>
             <b>Personal Portfolio Website</b><br/>
             A clean and simple website I made to give to employers with my work experience and projects. Made to be very mobile-friendly
@@ -244,7 +244,7 @@ function App() {
                 alt="myself"
             >
             </img>
-            <p class="text-slate-800 text-center p-4">My name is Scott McNally and I am a computer science student studying at Trinity College Dublin and 
+            <p class="text-slate-800 text-center p-4 md:text-lg">My name is Scott McNally and I am a computer science student studying at Trinity College Dublin and 
                   KTH Royal Institute Stockholm. I have a passion for making interesting and fun websites mainly using React and TailwindCSS. I learned web 
                   design through a combination of personal projects, college/school courses and online courses.
             </p>

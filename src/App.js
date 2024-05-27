@@ -5,13 +5,28 @@ import{AiFillLinkedin} from 'react-icons/ai';
 import me from './me.jpg'
 import netsoc from './netsoc.png'
 import portfolio from './portfolio.png'
-
-
+import {useRef} from 'react';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
+  const refContact = useRef(null);
+  const refWebsite = useRef(null);
+  const refAbout = useRef(null);
+  const refHome = useRef(null);
+  const handleClickContact = () => {
+    refContact?.current.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleClickWebsite = () => {
+    refWebsite?.current.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleClickAbout = () => {
+    refAbout?.current.scrollIntoView({behavior: 'smooth'});
+  };
+  const handleClickHome = () => {
+    refHome?.current.scrollIntoView({behavior: 'smooth'});
+  };
   return (
-    <div className='bg-white'>
+    <main ref={refHome} className='bg-white'>
       <nav className=" absolute w-full bg-white bg-opacity-90 z-0">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-0">
           <div className="flex items-center justify-between h-24">
@@ -85,41 +100,24 @@ function App() {
         >
           {(ref) => (
             <div className="" id="mobile-menu">
-              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="./"
-                  className=" text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
-                >
+              <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3 items-center grid">
+                <button onClick={handleClickHome} className=" text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center">
                   Home
-                </a>
-
-                <a
-                  href="./"
-                  className="text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
-                >
+                </button>
+                <button onClick={handleClickContact} className=" text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center">
                   Get In Touch
-                </a>
-
-                <a
-                  href="./"
-                  className="text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
-                >
+                </button>
+                <button onClick={handleClickWebsite} className=" text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center">
                   Websites
-                </a>
-
-                <a
-                 href="./"
-                  className="text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center"
-                >
+                </button>
+                <button onClick={handleClickAbout} className=" text-black hover:bg-blue-400 hover:text-white block px-3 py-2 rounded-md text-base font-bold text-center">
                   About Me
-                </a>
+                </button>
               </div>
             </div>
           )}
         </Transition>
       </nav>
-    
-      <main className='bg-white'>
         <section className='min-h-screen             
             bg-gradient-to-r 
             from-blue-400 
@@ -146,7 +144,7 @@ function App() {
 
           <div class="space-y-2 md:text-lg">
             <p class="text-slate-800 ">Reach out to discuss your next website with me!</p>
-            <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Contact →</a>
+            <button onClick={handleClickContact} class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Contact →</button>
           </div>
         </div>
         </div>
@@ -156,13 +154,13 @@ function App() {
 
           <div class="space-y-2 md:text-lg">
             <p class="text-slate-800">View some of the projects that I've worked on recently</p>
-            <a href="./" class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Websites →</a>
+            <button onClick={handleClickWebsite} class="block text-indigo-400 group-hover:text-slate-800 transition duration-200">Websites →</button>
           </div>
         </div>
         </div>
          </div>
          </section>
-        <section className=''>
+        <section className='' ref={refContact}>
           <div className='flex justify-center'>
             <div className='mt-4 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
               Contact Me
@@ -197,8 +195,7 @@ function App() {
         from-rose-200 
         to-teal-200 
         via-cyan-200
-        
-        animate-gradient-xy'>
+        animate-gradient-xy' ref={refWebsite}>
         <div className='flex justify-center'>
             <div className='mt-4 mb-6  font-extrabold text-white text-4xl md:text-5xl  p-4 z-100'>
               Websites
@@ -227,7 +224,7 @@ function App() {
 
         </div>
         </section>
-        <section className=''>
+        <section className='' ref={refAbout}>
         <div className='flex justify-center'>
             <div className='mt-4 animate-gradient-xy font-extrabold text-transparent text-4xl md:text-5xl bg-clip-text bg-gradient-to-r from-blue-400 to-orange-500 via-purple-500 p-4 z-100'>
               About Me
@@ -254,7 +251,8 @@ function App() {
         </div>
         </section>
       </main>
-    </div>
+
+    
   );
 }
 

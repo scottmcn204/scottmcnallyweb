@@ -128,17 +128,17 @@ function App() {
 
             "> 
             <div className='md:mt-96 mt-72'>
-              <div className='text-center   p-8 text-white font-extrabold text-4xl md:text-5xl  z-80'>
+              <div className='text-center   p-8 text-white font-extrabold text-4xl md:text-5xl animate-appearfade  z-80'>
                   Thoughtful Web Design For Your Business
               </div>
-              <p className=' lg:border-r-4 lg:border-r-white lg:pr-5 xl:text-lg text-center text-white m-3 lg:animate-typing lg:whitespace-nowrap lg:overflow-hidden'>
+              <p className=' lg:border-r-4 lg:border-r-white lg:pr-5 xl:text-lg text-center text-white m-3 lg:animate-typing lg:whitespace-nowrap lg:overflow-hidden animate-appearfade'>
                 Enhance your businesses branding with a sleek and modern website. Work together with me to perfect the ideal showcase of your business.
               </p>
             </div>
          </div>
          <div className='md:h-56 h-36  z-4'></div>
          <div className=' md:flex justify-center z-4'>
-          <div className='relative mx-4 my-3 z-4'>
+          <div className='relative mx-4 my-3 z-4 animate-appearfadeslow'>
          <div class=" absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25 z-4"></div>
         <div class="relative px-4 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6 z-4">
 
@@ -148,7 +148,7 @@ function App() {
           </div>
         </div>
         </div>
-        <div className='relative mx-4 my-3'>
+        <div className='relative mx-4 my-3 animate-appearfadeslow'>
          <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 animate-gradient-xy rounded-lg blur opacity-25"></div>
         <div class="relative px-4 py-5 bg-white ring-1 ring-gray-900/5 rounded-lg leading-none flex items-top justify-start space-x-6">
 
@@ -180,9 +180,9 @@ function App() {
             </div>
           </div>
           <div className='flex justify-center mb-5 z-40 mx-3'>
-            <div className='md:text-4xl bg-gray-500 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56  z-40'>
-              <h3 className='md:text-xl text-base py-1 px-2 font-bold'><a href='https://www.linkedin.com/in/scottamcnally'>mcnallsc@tcd.ie</a></h3>
-            </div>
+            <button onClick={() => window.location = 'mailto:mcnallsc@tcd.ie'} className='md:text-4xl bg-gray-500 text-3xl flex justify-center text-white a px-4 py-2 rounded-md md:w-56  z-40'>
+              <h3 className='md:text-xl text-base py-1 px-2 font-bold'>mcnallsc@tcd.ie</h3>
+            </button>
           </div>
           </div>
           </div>
@@ -204,17 +204,20 @@ function App() {
           </div>  
         <div className=' grid  place-items-center'>
           <div className='  lg:flex-row lg:flex-wrap mx-10 mb-4 md:w-1/2 md:text-lg'>
+          <a href="https://netsoc.netlify.app/">
           <img src={netsoc} className='rounded-xl object-cover   z-0'  width={'100%'} height={'100%'} alt="netsoc"/>
+          </a>
           <p>
             <b>Dublin University Internet Society Website</b><br/>
-            This is the website I made for Trinity's "NetSoc" This included some interesting features such as ReactJS Particles.
-          </p>
+            This is the website I made for Trinity's "NetSoc" This included some interesting features such as ReactJS Particles. Click to view the live website!          </p>
           </div>
           <div className='flex flex-col  py-4 lg:flex-row lg:flex-wrap mx-10 md:w-1/2 md:text-lg'>
+            <a href="https://mcnallsc.com/">
           <img src={portfolio} className='rounded-xl object-cover   z-100'  width={'100%'} height={'100%'} alt="netsoc"/>
+          </a>
           <p>
             <b>Personal Portfolio Website</b><br/>
-            A clean and simple website I made to give to employers with my work experience and projects. Made to be very mobile-friendly
+            A clean and simple website I made to give to employers with my work experience and projects. Made to be very mobile-friendly. Click to view the live website!
           </p>
           </div>
           {/* <Carousel className="rounded-xl">
